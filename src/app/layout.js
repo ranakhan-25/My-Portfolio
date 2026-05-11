@@ -1,7 +1,9 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/feature/Navbar";
-import  Providers  from "./Providers";
+import Providers from "./Providers";
+import Footer from "@/components/feature/Footer";
+import SmoothScroll from "@/components/shared/SmoothScroll";
 
 const poppins = Poppins({
   variable: "--font-geist-sans",
@@ -19,12 +21,19 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${poppins.variable} h-full antialiased`}
+      className={`${poppins.variable} h-full antialiased `}
     >
-      <body suppressHydrationWarning className=" bg-background text-foreground">
+      <body
+        suppressHydrationWarning
+        className=" bg-background text-foreground 
+        "
+      >
         <Providers>
-          <Navbar />
-          <main>{children}</main>
+          <SmoothScroll>
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </SmoothScroll>
         </Providers>
       </body>
     </html>

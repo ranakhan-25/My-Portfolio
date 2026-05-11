@@ -20,7 +20,7 @@ export default function ThemeToggle() {
       bg-linear-to-r from-violet-200 via-fuchsia-200 to-pink-200
       text-white shadow-lg hover:scale-110 duration-300"
     >
-      {darkMode ? (
+      {!darkMode ? (
         <FaSun className="text-2xl animate-spin text-white" />
       ) : (
         <FaMoon className="text-2xl text-black" />
