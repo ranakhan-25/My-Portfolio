@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Developer Portfolio Projects
 
-## Getting Started
+Welcome to my project showcase repository. This portfolio contains modern, responsive, and interactive web applications built using the latest front-end and basic full-stack technologies.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# 👨‍💻 About Me
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I’m a passionate Front-End Developer focused on building modern, responsive, and interactive web applications using React, Next.js, Tailwind CSS, and JavaScript. I enjoy creating smooth user experiences, animated interfaces, and clean UI designs. I also have basic knowledge of Node.js, Express.js, and MongoDB, allowing me to work with simple backend features and full-stack projects.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 🛠️ Technologies I Use
 
-## Learn More
+## Frontend
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- React.js
+- Next.js
+- Tailwind CSS
+- DaisyUI
+- HeroUi
+- Framer Motion
+- react-icons
+- react-simple-typewriter
+- lenis
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tools & Platforms
+- Git & GitHub
+- VS Code
+- Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 🔗 Links
+- 🌐 **Live:** https://ranakhanweb.vercel.app  
+- 💻 **Code:** https://github.com/ranakhan-25/My-Portfolio
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# ⭐ Support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you like my projects, feel free to give this repository a star and follow me for more modern web development projects.
+
+---
+
+# 📄 License
+
+This project is open-source and available under the MIT License.

@@ -72,7 +72,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">Email</p>
-                    <a href="mailto:your@email.com" className="text-xl font-semibold hover:text-violet-500 transition-colors">your@email.com</a>
+                    <a href="mailto:your@email.com" className="text-xl font-semibold hover:text-violet-500 transition-colors">ranakhandev2025@gmail.com</a>
                   </div>
                 </div>
 
@@ -82,7 +82,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">Phone</p>
-                    <a href="tel:+8801234567890" className="text-xl font-semibold hover:text-cyan-500 transition-colors">+880 1234-567890</a>
+                    <a href="tel:+8801234567890" className="text-xl font-semibold hover:text-cyan-500 transition-colors">+880 1910427346</a>
                   </div>
                 </div>
 
@@ -92,7 +92,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">Location</p>
-                    <p className="text-xl font-semibold">Dhaka, Bangladesh</p>
+                    <p className="text-xl font-semibold">Mymenshing, Bangladesh</p>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="space-y-8 bg-white/70 dark:bg-white/5 backdrop-blur-2xl border border-white/10 p-10 rounded-3xl">
+            <form onSubmit={handleSubmit} className="space-y-8 bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-white/10 p-10 rounded-3xl">
               <div className="grid md:grid-cols-2 gap-6">
                 <input
                   type="text"
@@ -132,7 +132,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   placeholder="Your Name"
                   required
-                  className="bg-white/80 dark:bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all"
+                  className="bg-white/90 dark:bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all"
                 />
                 <input
                   type="email"
@@ -141,7 +141,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   placeholder="Your Email"
                   required
-                  className="bg-white/80 dark:bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all"
+                  className="bg-white/90 dark:bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all"
                 />
               </div>
 
@@ -152,7 +152,7 @@ export default function ContactSection() {
                 onChange={handleChange}
                 placeholder="Subject"
                 required
-                className="w-full bg-white/80 dark:bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all"
+                className="w-full bg-white/90 dark:bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all"
               />
 
               <textarea
@@ -162,7 +162,7 @@ export default function ContactSection() {
                 placeholder="Your Message..."
                 rows={6}
                 required
-                className="w-full bg-white/80 dark:bg-white/10 border border-white/20 rounded-3xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all resize-none"
+                className="w-full bg-white/90 dark:bg-white/10 border border-white/20 rounded-3xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all resize-none"
               />
 
               <motion.button

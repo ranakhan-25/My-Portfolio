@@ -173,7 +173,7 @@ export default function ServicesSection() {
                 <FaArrowRight className="group-hover:translate-x-2 transition-all duration-300" />
               </span>
 
-              {/* Shine Effect */}
+              
               <div className="absolute top-0 left-[-100%] w-full h-full bg-white/20 skew-x-12 group-hover:left-[120%] transition-all duration-1000"></div>
             </button>
           </motion.div>

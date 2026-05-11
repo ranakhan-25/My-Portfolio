@@ -6,10 +6,12 @@ import { useEffect } from "react";
 export default function SmoothScroll({ children }) {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.5,
-      lerp: 0.08,
-      wheelMultiplier: 1,
+      duration: 2,
+      lerp: 0.05,
       smoothWheel: true,
+      wheelMultiplier: 0.6,
+      touchMultiplier: 1,
+      infinite: false,
     });
 
     function raf(time) {

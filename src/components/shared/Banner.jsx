@@ -105,7 +105,7 @@ export default function HomePage() {
           {/* Main Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{opacity: 1, y: 0}}
             transition={{ delay: 0.3 }}
             className="my-4 text-[42px] md:text-5xl xl:text-6xl font-bold leading-tight"
           >
@@ -167,9 +167,9 @@ export default function HomePage() {
             </Link>
 
             {/* Contact Button */}
-            <button className="px-7 py-3 rounded-full border border-violet-500 text-violet-500 hover:bg-violet-500 hover:text-white transition-all duration-500 font-semibold">
+            <a href="#contract"><button className="px-7 py-3 rounded-full border border-violet-500 text-violet-500 hover:bg-violet-500 hover:text-white transition-all duration-500 font-semibold">
               Hire Me
-            </button>
+            </button></a>
 
           </motion.div>
 
@@ -186,24 +186,28 @@ export default function HomePage() {
                 icon: <FaGithub />,
                 color:
                   "hover:text-white hover:bg-black",
+                href:"https://github.com/ranakhan-25",
               },
 
               {
                 icon: <FaLinkedinIn />,
                 color:
                   "hover:text-white hover:bg-blue-500",
+                href:"https://www.linkedin.com/in/rana-khan-dev",
               },
 
               {
                 icon: <FaYoutube />,
                 color:
                   "hover:text-white hover:bg-red-500",
+                href:"https://www.youtube.com/@Ranakhan-r5b",
               },
 
               {
                 icon: <FaTwitter />,
                 color:
                   "hover:text-white hover:bg-sky-500",
+                href:"https://x.com/Ranakhan2025",
               },
             ].map((social, index) => (
               <motion.div
@@ -218,7 +222,7 @@ export default function HomePage() {
               >
 
                 <Link
-                  href=""
+                  href={social.href}
                   className={`w-14 h-14 rounded-2xl border border-white/10 bg-white/50 dark:bg-white/5 backdrop-blur-xl flex items-center justify-center text-2xl transition-all duration-500 shadow-lg ${social.color}`}
                 >
                   {social.icon}

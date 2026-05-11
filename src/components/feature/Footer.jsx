@@ -17,7 +17,7 @@ export default function Footer() {
           {/* Left - Brand */}
           <div>
             <h2 className="text-3xl font-bold mb-4">
-              Your Name<span className="text-violet-500">.</span>
+              Atikul Haq (RANA)<span className="text-violet-500">.</span>
             </h2>
             <p className="text-gray-400 max-w-xs">
               Frontend Developer crafting beautiful and functional digital experiences.
@@ -53,21 +53,21 @@ export default function Footer() {
             
             <div className="flex gap-5 mb-10">
               <motion.a
-                href="#"
+                href="https://github.com/ranakhan-25"
                 whileHover={{ scale: 1.2, rotate: 8 }}
                 className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-2xl hover:bg-violet-600 transition-all"
               >
                 <FaGithub />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://www.linkedin.com/in/rana-khan-dev"
                 whileHover={{ scale: 1.2, rotate: 8 }}
                 className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-2xl hover:bg-violet-600 transition-all"
               >
                 <FaLinkedin />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://x.com/Ranakhan2025"
                 whileHover={{ scale: 1.2, rotate: 8 }}
                 className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-2xl hover:bg-violet-600 transition-all"
               >
