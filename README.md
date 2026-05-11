@@ -43,7 +43,3 @@ I’m a passionate Front-End Developer focused on building modern, responsive, a
 If you like my projects, feel free to give this repository a star and follow me for more modern web development projects.
 
 ---
-
-# 📄 License
-
-This project is open-source and available under the MIT License.
