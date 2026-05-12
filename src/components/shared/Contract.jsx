@@ -57,6 +57,12 @@ export default function ContactSection() {
     setIsSubmitting(false);
   };
 
+  const social = [
+    {icon:FaGithub,href:"https://github.com/ranakhan-25"},
+    {icon:FaLinkedin,href:"https://www.linkedin.com/in/rana-khan-dev"},
+    {icon:FaTwitter,href:"https://x.com/Ranakhan2025"},
+  ]
+
   return (
     <section className="relative py-28 px-4 md:px-10 bg-white dark:bg-[#020617] overflow-hidden">
       {/* Background Glows */}
@@ -146,15 +152,17 @@ export default function ContactSection() {
             <div>
               <h4 className="text-xl font-semibold mb-6">Find me on</h4>
               <div className="flex gap-6">
-                {[FaGithub, FaLinkedin, FaTwitter].map((Icon, i) => (
+                {social.map((Icon, i) => (
                   <motion.a
                     key={i}
-                    href="#"
+                    href={Icon.href}
                     whileHover={{ scale: 1.3, rotate: 10 }}
                     whileTap={{ scale: 0.9 }}
                     className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-3xl hover:bg-white/20 transition-all"
                   >
-                    <Icon />
+                    {
+                      <Icon.icon/>
+                    }
                   </motion.a>
                 ))}
               </div>
