@@ -10,6 +10,7 @@ export default function SmoothScroll({ children }) {
       lerp: 0.05,
       smoothWheel: true,
       wheelMultiplier: 0.6,
+      smoothTouch: true,
       touchMultiplier: 1,
       infinite: false,
     });
