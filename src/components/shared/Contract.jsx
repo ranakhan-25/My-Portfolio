@@ -2,7 +2,14 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -22,16 +29,32 @@ export default function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitted(true);
-      
-      setTimeout(() => {
-        setSubmitted(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setSubmitted(true);
         setFormData({ name: "", email: "", subject: "", message: "" });
-      }, 3000);
-    }, 1800);
+
+        setTimeout(() => {
+          setSubmitted(false);
+        }, 3000);
+      } else {
+        alert("Failed to send message!");
+      }
+    } catch (error) {
+      alert("Something went wrong!");
+    }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -50,7 +73,10 @@ export default function ContactSection() {
             Get In Touch
           </motion.p>
           <h2 className="text-4xl md:text-6xl font-bold">
-            Let&apos;s Work <span className="bg-gradient-to-r from-violet-500 to-cyan-500 bg-clip-text text-transparent">Together</span>
+            Let&apos;s Work{" "}
+            <span className="bg-gradient-to-r from-violet-500 to-cyan-500 bg-clip-text text-transparent">
+              Together
+            </span>
           </h2>
         </div>
 
@@ -64,15 +90,22 @@ export default function ContactSection() {
           >
             <div>
               <h3 className="text-3xl font-medium mb-8">Contact Information</h3>
-              
+
               <div className="space-y-8">
                 <div className="flex items-start gap-6 group">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center text-2xl transition-transform group-hover:scale-110">
                     <FaEnvelope />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Email</p>
-                    <a href="mailto:your@email.com" className="text-xl font-semibold hover:text-violet-500 transition-colors">ranakhandev2025@gmail.com</a>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      Email
+                    </p>
+                    <a
+                      href="mailto:your@email.com"
+                      className="text-xl font-semibold hover:text-violet-500 transition-colors"
+                    >
+                      ranakhandev2025@gmail.com
+                    </a>
                   </div>
                 </div>
 
@@ -81,8 +114,15 @@ export default function ContactSection() {
                     <FaPhone />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Phone</p>
-                    <a href="tel:+8801234567890" className="text-xl font-semibold hover:text-cyan-500 transition-colors">+880 1910427346</a>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      Phone
+                    </p>
+                    <a
+                      href="tel:+8801234567890"
+                      className="text-xl font-semibold hover:text-cyan-500 transition-colors"
+                    >
+                      +880 1910427346
+                    </a>
                   </div>
                 </div>
 
@@ -91,8 +131,12 @@ export default function ContactSection() {
                     <FaMapMarkerAlt />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Location</p>
-                    <p className="text-xl font-semibold">Mymenshing, Bangladesh</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      Location
+                    </p>
+                    <p className="text-xl font-semibold">
+                      Mymenshing, Bangladesh
+                    </p>
                   </div>
                 </div>
               </div>
@@ -123,7 +167,10 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="space-y-8 bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-white/10 p-10 rounded-3xl">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-8 bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-white/10 p-10 rounded-3xl"
+            >
               <div className="grid md:grid-cols-2 gap-6">
                 <input
                   type="text"
@@ -172,8 +219,11 @@ export default function ContactSection() {
                 disabled={isSubmitting || submitted}
                 className="w-full py-5 rounded-2xl bg-gradient-to-r from-violet-600 via-fuchsia-600 to-cyan-500 text-white font-semibold text-lg shadow-xl shadow-violet-500/30 disabled:opacity-70 transition-all"
               >
-                {submitted ? "✅ Message Sent Successfully!" : 
-                 isSubmitting ? "Sending Message..." : "Send Message"}
+                {submitted
+                  ? "✅ Message Sent Successfully!"
+                  : isSubmitting
+                    ? "Sending Message..."
+                    : "Send Message"}
               </motion.button>
             </form>
           </motion.div>

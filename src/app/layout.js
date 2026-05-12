@@ -4,7 +4,8 @@ import Navbar from "@/components/feature/Navbar";
 import Providers from "./Providers";
 import Footer from "@/components/feature/Footer";
 import SmoothScroll from "@/components/shared/SmoothScroll";
-import PremiumCursor from "@/components/shared/CustomCursor";
+import CursorProvider from "./CursorProvider";
+
 
 const poppins = Poppins({
   variable: "--font-geist-sans",
@@ -30,7 +31,7 @@ export default function RootLayout({ children }) {
         "
       >
         <Providers>
-          <PremiumCursor/>
+          <CursorProvider />
           <SmoothScroll>
             <Navbar />
             <main>{children}</main>
