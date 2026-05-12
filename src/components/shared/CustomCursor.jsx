@@ -14,6 +14,7 @@ export default function PremiumCursor() {
 
   const [clickEffect, setClickEffect] = useState(false);
 
+  
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
