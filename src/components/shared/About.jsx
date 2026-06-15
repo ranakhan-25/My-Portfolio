@@ -2,23 +2,24 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaReact, FaJs, FaGithub, FaArrowRight } from "react-icons/fa";
+import { FaReact, FaArrowRight, FaNodeJs } from "react-icons/fa";
 
-import { SiNextdotjs, SiTailwindcss, SiMongodb, SiRedux } from "react-icons/si";
+import { SiNextdotjs, SiMongodb } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 
 export default function AboutSection() {
   const skills = [
     {
-      icon: <SiNextdotjs />,
       name: "Next.js",
+      icon: <RiNextjsFill />,
     },
     {
-      icon: <SiTailwindcss />,
-      name: "Tailwind",
+      name: "Node.js",
+      icon: <FaNodeJs />,
     },
     {
-      icon: <SiMongodb />,
       name: "MongoDB",
+      icon: <SiMongodb />,
     },
   ];
 
@@ -120,7 +121,7 @@ export default function AboutSection() {
           >
             Passionate{" "}
             <span className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
-              Front-End
+              MERN Stack
             </span>{" "}
             Developer
           </motion.h2>
@@ -132,10 +133,12 @@ export default function AboutSection() {
             transition={{ delay: 0.4 }}
             className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 mb-10"
           >
-            I build modern, interactive and fully responsive web applications
-            with React, Next.js and Tailwind CSS. I love creating smooth user
-            experiences, animated UI, clean code architecture and beautiful
-            interfaces.
+            I am a passionate MERN Stack Developer with experience building
+            modern, responsive, and user-friendly web applications. I enjoy
+            working with MongoDB, Express.js, React.js, Next.js, and Node.js to
+            create efficient and scalable solutions. I am dedicated to writing
+            clean code, solving real-world problems, and continuously improving
+            my skills through learning and hands-on projects.
           </motion.p>
 
           {/* Skills */}
@@ -184,15 +187,37 @@ export default function AboutSection() {
             </motion.button>
 
             <dialog id="my_modal_1" className="modal">
-              <div className="modal-box">
-                <h3 className="font-bold text-lg text-black">About me</h3>
-                <p className="py-4 text-black">
-                  I’m a passionate Front-End Developer focused on building modern, responsive, and interactive web applications using React, Next.js, Tailwind CSS, and JavaScript. I enjoy creating smooth user experiences, animated interfaces, and clean UI designs. I also have basic knowledge of Node.js, Express.js, and MongoDB, allowing me to work with simple backend features and full-stack projects.
+              <div className="modal-box max-w-2xl bg-black">
+                <h3 className="font-bold text-2xl mb-4 text-black dark:text-white">
+                  About Me
+                </h3>
+
+                <p className="py-2 text-gray-700 dark:text-gray-300 leading-relaxed">
+                  I am a passionate MERN Stack Developer with hands-on
+                  experience in building modern, responsive, and user-friendly
+                  web applications. I enjoy transforming ideas into functional
+                  digital products using React.js, Next.js, Node.js, Express.js,
+                  and MongoDB.
                 </p>
+
+                <p className="py-2 text-gray-700 dark:text-gray-300 leading-relaxed">
+                  My expertise includes creating responsive user interfaces,
+                  integrating REST APIs, implementing authentication systems,
+                  and developing scalable backend solutions. I focus on writing
+                  clean, maintainable code and delivering seamless user
+                  experiences across different devices.
+                </p>
+
+                <p className="py-2 text-gray-700 dark:text-gray-300 leading-relaxed">
+                  I am continuously learning new technologies and best practices
+                  to improve my skills as a developer. My goal is to contribute
+                  to impactful projects, solve real-world problems, and grow as
+                  a professional software developer.
+                </p>
+
                 <div className="modal-action">
                   <form method="dialog">
-                    {/* if there is a button in form, it will close the modal */}
-                    <button className="btn">Close</button>
+                    <button className="btn btn-primary">Close</button>
                   </form>
                 </div>
               </div>

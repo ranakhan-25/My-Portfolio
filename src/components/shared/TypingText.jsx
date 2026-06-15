@@ -8,7 +8,7 @@ export default function TypingText() {
       <span className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
         <Typewriter
           words={[
-            "Front-End Developer",
+            "MERN Stack Developer",
             "UI/UX Enthusiast",
             "Tech Explorer",
             "Always Learning New Tech",

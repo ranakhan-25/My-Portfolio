@@ -139,8 +139,7 @@ export default function HomePage() {
             transition={{ delay: 0.5 }}
             className="text-[16px] md:text-lg py-5 pb-8 leading-relaxed text-gray-600 dark:text-gray-300 max-w-[650px]"
           >
-            I build responsive, modern and interactive web applications using
-            React, Next.js, Tailwind CSS and JavaScript.
+            A MERN Stack Developer passionate about creating modern web applications that deliver seamless user experiences and real-world solutions.
           </motion.p>
 
           {/* BUTTONS */}
@@ -153,7 +152,7 @@ export default function HomePage() {
 
             {/* CV Button */}
             <Link
-              href="https://drive.google.com/file/d/1lcDNLbEI0Q-mSYnmzYi6VShs11WLxei4/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Ondxbpnq-gU79XWDZfJdwokDKMIrOUEZ/view?usp=drive_link"
               target="_blank"
               className="group relative px-7 py-3 rounded-full overflow-hidden bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-semibold shadow-[0_0_40px_rgba(168,85,247,0.4)] hover:scale-105 transition-all duration-500 flex items-center gap-3"
             >

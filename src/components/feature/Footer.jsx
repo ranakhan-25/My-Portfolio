@@ -20,7 +20,7 @@ export default function Footer() {
               Atikul Haq (RANA)<span className="text-violet-500">.</span>
             </h2>
             <p className="text-gray-400 max-w-xs">
-              Frontend Developer crafting beautiful and functional digital experiences.
+              MERN Stack Developer crafting beautiful and functional digital experiences.
             </p>
 
             <div className="mt-6 flex items-center gap-2 text-sm text-gray-500">
@@ -34,7 +34,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-6 text-violet-400">Quick Links</h3>
             <div className="space-y-3">
-              {["Home", "About", "Skills", "Projects", "Contact"].map((link, i) => (
+              {["Home", "About", "Skills", "Projects", "Contract"].map((link, i) => (
                 <motion.a
                   key={i}
                   href={`#${link.toLowerCase()}`}
@@ -78,7 +78,7 @@ export default function Footer() {
             <div>
               <p className="text-gray-400 text-sm">Have a project in mind?</p>
               <a 
-                href="#contact" 
+                href="#contract" 
                 className="text-violet-400 hover:text-violet-300 font-medium transition-colors"
               >
                 Let&apos;s talk →
