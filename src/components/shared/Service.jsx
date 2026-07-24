@@ -149,34 +149,7 @@ export default function ServicesSection() {
             ))}
           </div>
 
-          {/* ================= BOTTOM CTA ================= */}
-
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 80,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 0.8,
-              delay: 0.5,
-            }}
-            className="mt-24 text-center"
-          >
-            <button className="group relative overflow-hidden px-10 py-4 rounded-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-cyan-500 text-white font-semibold text-lg shadow-[0_0_50px_rgba(139,92,246,0.4)] hover:scale-105 transition-all duration-500">
-              <span className="relative z-10 flex items-center gap-3">
-                Explore More Services
-                <FaArrowRight className="group-hover:translate-x-2 transition-all duration-300" />
-              </span>
-
-              
-              <div className="absolute top-0 left-[-100%] w-full h-full bg-white/20 skew-x-12 group-hover:left-[120%] transition-all duration-1000"></div>
-            </button>
-          </motion.div>
+          
         </div>
       </section>
   );

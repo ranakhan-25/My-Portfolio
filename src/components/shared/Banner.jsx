@@ -152,7 +152,7 @@ export default function HomePage() {
 
             {/* CV Button */}
             <Link
-              href="https://drive.google.com/file/d/1Ondxbpnq-gU79XWDZfJdwokDKMIrOUEZ/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1lR011baW2GmcwHbaxWsHgdJn7men3fTB/view?usp=sharing"
               target="_blank"
               className="group relative px-7 py-3 rounded-full overflow-hidden bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-semibold shadow-[0_0_40px_rgba(168,85,247,0.4)] hover:scale-105 transition-all duration-500 flex items-center gap-3"
             >
