@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         className="bg-background text-foreground font-[family-name:var(--font-poppins)]"
       >
         <Providers>
-          <CursorProvider />
+          {/* <CursorProvider /> */}
           <SmoothScroll>
             <Navbar />
             <main>{children}</main>
