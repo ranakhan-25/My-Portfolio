@@ -4,6 +4,7 @@ import ServicesSection from "@/components/shared/Service";
 import AllSkills from "@/components/shared/AllSkills";
 import ProjectsSection from "@/components/shared/Projects";
 import ContactSection from "@/components/shared/Contract";
+import AIWorkflowSection from "@/components/shared/AIWorkflowSection";
 
 const Home = () => {
   return (
@@ -20,6 +21,9 @@ const Home = () => {
       <section id="skills">
         <AllSkills />
       </section>
+      
+      <AIWorkflowSection />
+
       <section id="projects">
         <ProjectsSection />
       </section>
